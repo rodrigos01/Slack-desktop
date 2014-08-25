@@ -1,0 +1,15 @@
+Source: slack-desktop
+Section: InstantMessaging
+Priority: optional
+Maintainer: Rodrigo Santos <rodrigos.santos01@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), libhunspell-1.3-0, libxcb-dri2-0, fontconfig-config, libxcb-dri3-0, gvfs-libs, libqt5sensors5, libudev1, gvfs, libxkbcommon0, libgconf-2-4, libxcursor1, libavahi-client3, fonts-freefont-ttf, libqt5sql5, libxcb-keysyms1, libxfixes3, libqt5quick5, libxcb-render-util0, libdrm-radeon1, libproxy1, libx11-6, libdatrie1, fonts-tlwg-umpush, libavahi-common3, libqt5webkit5, libavahi-glib1, ttf-punjabi-fonts, libxdamage1, libgtk2.0-0, fonts-tlwg-typo, libxcb-render0, libglapi-mesa, libxxf86vm1, libqt5svg5, language-selector-common, libnss-mdns, cups-filters, libicu52, libqt5core5a, libgstreamer-plugins-base1.0-0, libgnomevfs2-0, gvfs-daemons, gsfonts, libpangocairo-1.0-0, libxcb-xfixes0, libxcb-xkb1, libdbus-glib-1-2, ttf-indic-fonts-core, libxi6, libxcb-util0, libatk1.0-0, libc-bin, fonts-tlwg-typist, dconf-gsettings-backend, libqt5network5, libgstreamer1.0-0, libqt5printsupport5, openssl, gvfs-backends, libgdk-pixbuf2.0-0, locales, ibus-gtk, fonts-tlwg-garuda, hicolor-icon-theme, liblzma5, libnih-dbus1, gnome-icon-theme, libqt5opengl5, libjpeg-turbo8, libnih1, shimmer-themes, libibus-1.0-5, libqt5qml5, libxdmcp6, libx11-data, fonts-dejavu-extra, libexpat1, libxcb-randr0, libxshmfence1, fonts-nanum, fonts-dejavu-core, libthai0, libgraphite2-3, libsqlite3-0, base-files, libssl1.0.0, libxcb-shm0, libqt5dbus5, gtk2-engines-murrine, libgl1-mesa-glx, libdrm-intel1, xubuntu-icon-theme, libfreetype6, libuuid1, libdbus-1-3, libxkbcommon-x11-0, hunspell-en-us, libdrm-nouveau2, ca-certificates, libxcb-sync1, libpng12-0, libxcb-present0, libselinux1, libxext6, fonts-liberation, liborc-0.4-0, libgcrypt11, libice6, libc6, libxcb-icccm4, libx11-xcb1, libglib2.0-0, libxcomposite1, libdrm2, libqt5gui5, libxml2, libgl1-mesa-dri, libxcb-shape0, libharfbuzz0b, fonts-tlwg-mono, libxcb1, libpango-1.0-0, libcgmanager0, libxrandr2, fonts-khmeros-core, fonts-tlwg-kinnari, fonts-tlwg-waree, libxcb-glx0, libfontconfig1, libxcb-image0, libgnutls26, python-ubuntu-sso-client, libsm6, fonts-tlwg-loma, libxau6, libcairo2, libtasn1-6, dmz-cursor-theme, fonts-tlwg-norasi, libxinerama1, zlib1g, libxslt1.1, glib-networking, libpciaccess0, libpangoft2-1.0-0, libxrender1, libffi6, libp11-kit0, libgcc1, libqt5positioning5, libpcre3, libgpg-error0, fonts-droid, libstdc++6, libpixman-1-0, udev, libqt5widgets5, fonts-takao-pgothic
+Standards-Version: 3.9.4
+Homepage: https://objectedge.slack.com
+#Vcs-Git: git://git.debian.org/collab-maint/slack-desktop.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/slack-desktop.git;a=summary
+
+Package: slack-desktop
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

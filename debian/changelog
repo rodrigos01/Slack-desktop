@@ -1,0 +1,5 @@
+slack-desktop (0.7-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Rodrigo Santos <rodrigos.santos01@gmail.com>  Fri, 22 Aug 2014 15:37:20 -0300

@@ -1,0 +1,11 @@
+Package: slack-desktop
+Version: 0.7-1
+Architecture: amd64
+Maintainer: Rodrigo Santos <rodrigos.santos01@gmail.com>
+Installed-Size: 115
+Depends: libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libqt5core5a (>= 5.0.2), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5webkit5, libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 4.1.1)
+Section: InstantMessaging
+Priority: optional
+Homepage: https://objectedge.slack.com
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

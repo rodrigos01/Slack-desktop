@@ -22,7 +22,6 @@
 #include <QNetworkCookie>
 #include <QNetworkCookieJar>
 #include <QSettings>
-
 #include <QDesktopServices>
 
 #ifdef TOUCH_OPTIMIZED_NAVIGATION
@@ -1168,12 +1167,12 @@ Html5ApplicationViewer::Html5ApplicationViewer(QWidget *parent)
     connect(m_d, SIGNAL(quitRequested()), SLOT(close()));
     QVBoxLayout *layout = new QVBoxLayout;
 
+    m_d->m_webView->page()->setLinkDelegationPolicy(QWebPage::DelegateAllLinks);
+    connect(m_d->m_webView, SIGNAL(linkClicked (const QUrl &)), this, SLOT(linkClickedSlot(const QUrl &)));
+
     PersistentCookieJar* jar = new PersistentCookieJar(this);
     m_d->m_webView->page()->networkAccessManager()->setCookieJar(jar);
     jar->setParent(this);  // reparent to main widget to avoid destruction together with the page
-
-    m_d->m_webView->page()->setLinkDelegationPolicy(QWebPage::DelegateAllLinks);
-    connect(m_d->m_webView, SIGNAL(linkClicked (const QUrl &)), this, SLOT(linkClickedSlot(const QUrl &)));
 
     layout->addWidget(m_d);
     layout->setMargin(0);
